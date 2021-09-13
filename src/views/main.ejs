@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css">
+    <title>OnlineChat</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="cont">
+        <div class="demo">
+            <div class="panel" id="login-ui">
+                <div class="login__check"></div>
+                <div class="login__form">
+                    <div class="login__row">
+                        <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+                        </svg>
+                        <input class="form-control" id="username-input" autocomplete="off" type="text"
+                            placeholder="Username">
+                    </div>
+                    <span class="login-error" id="login-error" style="color: #ccc;
+                    font-size: 15px;
+                    top: 10px;
+                    display: none;
+                    margin-top: 10px;
+                    text-shadow: 0 0 30px #fff;
+                    ">Error</span>
+
+                    <button onclick="login()" class="btn" id="btn">Login</button>
+                    <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
+                </div>
+            </div>
+            <div class="app" id="chat-ui">
+                <div class="chatbox">
+                    <div class="chat-title">
+                        <h1> >>> CHAT <<<< </h1> </div> <div class="messages">
+                                <div class="messages-list" id="chat-list">
+                                </div>
+                                
+                    </div>
+                    <div class="message-box">
+                        <input class="form-control" id="message-input" type="text" placeholder="Your message">
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'>
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
