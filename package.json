@@ -1,0 +1,44 @@
+{
+  "name": "online-chat",
+  "version": "1.0.0",
+  "description": "Example of Real-time chat built on Socket.io and Node.js",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "babel-node ./src",
+    "dev": "nodemon --exec babel-node ./src"
+  },
+  "keywords": [
+    "online chat",
+    "online",
+    "real time",
+    "socket.io",
+    "babel",
+    "nodejs"
+  ],
+  "author": "Bryan-Herrera-Dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sammwyy/online-chat.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "depd": "^2.0.0",
+    "ejs": "^3.1.5",
+    "exppress": "0.0.1-security",
+    "express": "^4.17.1",
+    "finalhandler": "^1.1.2",
+    "merge-descriptors": "^1.0.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.4"
+  }
+}
